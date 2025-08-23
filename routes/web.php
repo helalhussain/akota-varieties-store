@@ -9,7 +9,7 @@ use App\Http\Controllers\Frontend\StaffController;
 
 use App\Http\Controllers\Frontend\NoticeController;
 use App\Http\Controllers\Frontend\AboutController;
-use App\Http\Controllers\Frontend\GalleryController;
+use App\Http\Controllers\Frontend\ProductController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
@@ -31,11 +31,8 @@ Route::get('/',[HomeController::class,'home'])->name('home.page');
 Route::get('service/{id}',[HomeController::class,'show'])->name('home.show.page');
 Route::get('lang/{lang}',[LanguageController::class, 'switchLang'])->name('lang.switch');
 Route::middleware('auth')->group(function () {
-    // Route::get('/account/password', [PasswordController::class, 'index'])->name('password.index');
-    // Route::put('/account/password', [PasswordController::class, 'update'])->name('password.update');
 
 
-    // Route::get('/account/notice/show/{id}',[DashboardController::class,'notice_show'])->name('notice.show');
     Route::get('/account/dashboard/download/{file}',[DashboardController::class,'file_download'])
     ->name('file.download');
 
@@ -50,7 +47,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/staff', [StaffController::class,'index'])->name('staff.index');
 Route::resource('/notice', NoticeController::class);
 Route::get('/about-us', [AboutController::class, 'about'])->name('about.index');
-Route::get('/gallery', [GalleryController::class, 'gallery'])->name('gallery.index');
+Route::get('/products', [ProductController::class, 'index'])->name('product.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
     Route::post('/contact', [ContactController::class, 'contactSend'])->name('contact.send');
 require __DIR__.'/auth.php';

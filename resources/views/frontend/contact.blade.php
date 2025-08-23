@@ -5,166 +5,210 @@
 @section('content')
 
 
-@include('layouts.frontend.partials.header')
-{{-- @include('layouts.frontend.partials.topnav') --}}
-  <main class="main">
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>{{ __('contact.contactus') }}</h2>
-        {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-                              <!----Business hourse---->
-              <div>
-                <div class="container hours-card">
-  {{-- <div class="card shadow"> --}}
-    <div class="card-header bg text-white text-center" style="background:#211689">
-      <h4 class="text-white pt-2 pb-2">Business Hours</h4>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item d-flex justify-content-between">
-        {{-- <span>Monday <br><small class="special-note">(Buddha Purnima – hours may vary)</small></span> --}}
-        {{-- <span>9:00 AM – 7:00 PM</span> --}}
-      </li>
-        <li class="list-group-item d-flex justify-content-between">
-        <span>Monday</span>
-        <span>9:00 AM – 7:00 PM</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between">
-        <span>Tuesday</span>
-        <span>9:00 AM – 7:00 PM</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between">
-        <span>Wednesday</span>
-        <span>9:00 AM – 7:00 PM</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between">
-        <span>Thursday</span>
-        <span>9:00 AM – 7:00 PM</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between">
-        <span>Friday</span>
-        <span class="closed">Closed</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between">
-        <span>Saturday</span>
-        <span>9:00 AM – 7:00 PM</span>
-      </li>
-      <li class="list-group-item d-flex justify-content-between">
-        <span>Sunday</span>
-        <span>9:00 AM – 7:00 PM</span>
-      </li>
-    </ul>
-  {{-- </div> --}}
-</div>
-              </div>
-
-              <!----End business hourse----->
-              <br/><br/>
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>{{ __('contact.address') }}</h3>
-                  <p>{{ $setting->address }}</p>
+           <!-- title page -->
+            <section class="flat-title-page inner"><div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="page-title-heading center">
+                                <h2 class="heading">Contact Us</h2>
+                                <div class="title-inner link-style-3">
+                                    <h5 class=""><a class="home fw-4" href="/">Home</a><span>Contact Us</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div><!-- End Info Item -->
+            </section>
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>{{ __('contact.phone') }}</h3>
-                  <p>{{ $setting->contact_no }}</p>
+            <section class="tf-section2 flat-icon-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="heading-section center">
+                                <h2>Get In Touch</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="box-icon flex">
+                                <div class="icon">
+                                     <svg enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="32" xmlns="http://www.w3.org/2000/svg"><g><path d="m336.999 0c-8.284 0-15 6.715-15 14.999 0 8.284 6.716 15 15 15 79.954.001 145.001 65.048 145.001 145.002 0 8.284 6.716 15 15 15 8.284 0 14.999-6.716 14.999-15 .001-96.651-78.349-175.001-175-175.001z"/><path d="m337 90c46.869 0 85 38.132 85.001 85 0 8.284 6.716 15 15 15 8.284 0 14.999-6.716 14.999-15 0-63.513-51.487-115-115-115-8.285 0-15 6.716-15 15 0 8.284 6.716 15 15 15z"/><path d="m322 135.001c0 8.284 6.716 15 15 15 6.977 0 13.518 2.839 18.303 7.97 4.416 4.735 6.697 11.078 6.697 17.553 0 7.996 6.481 14.477 14.477 14.477h.523c8.284 0 14.999-6.716 14.999-15 0-30.375-24.624-55-55-55-8.284 0-14.999 6.715-14.999 15z"/><path d="m433.193 305.081c-17.546-17.546-46.094-17.545-63.64 0l-33.682 33.682c-4.839 4.839-12.244 5.855-18.007 2.47-20.149-11.836-50.847-32.623-82.661-64.437-31.814-31.813-52.601-62.511-64.437-82.661-3.385-5.763-2.369-13.168 2.47-18.007l33.682-33.682c17.546-17.546 17.546-46.094 0-63.64l-63.64-63.64c-17.546-17.546-46.094-17.545-63.64 0l-52.894 52.9c-.003.003-.003.003-.006.006-14.184 14.184-23.128 32.199-25.865 52.093-2.722 19.791.953 39.554 10.627 57.152 37.886 68.916 82.007 127.49 138.85 184.334 56.844 56.843 115.418 100.964 184.334 138.851 17.597 9.674 37.36 13.349 57.151 10.626 19.898-2.737 37.913-11.683 52.099-25.871l52.899-52.895c17.546-17.546 17.546-46.094 0-63.64zm-332.341-268.701c5.849-5.849 15.365-5.849 21.214 0l63.64 63.64c5.849 5.849 5.848 15.365 0 21.214l-10.607 10.607-84.854-84.854zm321.867 427.665c-19.229 19.232-49.487 23.412-73.582 10.167-66.365-36.484-122.789-78.992-177.573-133.775-54.784-54.784-97.292-111.209-133.776-177.573-13.245-24.094-9.066-54.35 10.163-73.579.001-.001.002-.002.003-.004l21.082-21.078 84.849 84.849-1.863 1.863c-14.498 14.498-17.427 36.874-7.124 54.415 12.722 21.658 35.036 54.624 69.091 88.679s67.021 56.369 88.679 69.091c17.541 10.303 39.917 7.374 54.415-7.124l1.863-1.863 84.849 84.849zm52.901-52.897-10.607 10.607-84.853-84.854 10.607-10.607c5.849-5.849 15.365-5.849 21.214 0l63.64 63.64c5.848 5.849 5.848 15.365-.001 21.214z"/></g></svg>
+                                </div>
+                                <div class="content">
+                                    <h3 class="text-color-6">Phone</h3>
+                                    <a href="tel:0123456789"><p>+(111)65-458-856</p></a>
+                                    <a href="tel:0123456789"><p>+(111)65-458-856</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="box-icon flex">
+                                <div class="icon">
+                                    <svg height="33" viewBox="0 0 125 125" width="33" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m105.182 97.82h-85.364a10.477 10.477 0 0 1 -10.465-10.466v-52.72a10.477 10.477 0 0 1 10.465-10.466h85.364a10.477 10.477 0 0 1 10.465 10.466v52.72a10.477 10.477 0 0 1 -10.465 10.466zm-85.364-69.652a6.472 6.472 0 0 0 -6.465 6.466v52.72a6.472 6.472 0 0 0 6.465 6.466h85.364a6.472 6.472 0 0 0 6.465-6.466v-52.72a6.472 6.472 0 0 0 -6.465-6.466z"/><path d="m62.5 72.764a2 2 0 0 1 -1.324-.5l-48.2-42.548 2.647-3 46.877 41.384 46.879-41.379 2.647 3-48.2 42.548a1.994 1.994 0 0 1 -1.326.495z"/><path d="m5.012 72.393h49.061v4h-49.061z" transform="matrix(.66 -.752 .752 .66 -45.859 47.529)"/><path d="m93.454 49.862h4v49.062h-4z" transform="matrix(.752 -.66 .66 .752 -25.361 81.43)"/></svg>
+                                </div>
+                                <div class="content">
+                                    <h3 class="text-color-6">Email</h3>
+                                    <a href="info:company@.com"><p>company@.com</p></a>
+                                    <a href="info:company@.com"><p>career@example.com</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="box-icon style3 flex">
+                                <div class="icon">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M256.98,40.005c-5.53-0.04-10.04,4.41-10.08,9.93c-0.04,5.52,4.4,10.03,9.93,10.07c5.52,0.04,10.03-4.4,10.07-9.92
+                                                    C266.94,44.565,262.5,40.055,256.98,40.005z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M256.525,100.004c-38.611-0.274-70.232,30.875-70.524,69.474c-0.291,38.597,30.875,70.233,69.474,70.524
+                                                    c0.179,0.001,0.357,0.002,0.536,0.002c38.353,0,69.698-31.056,69.988-69.476C326.29,131.933,295.125,100.295,256.525,100.004z
+                                                    M256.009,220.005c-0.126,0-0.258-0.001-0.384-0.002c-27.571-0.208-49.833-22.806-49.625-50.375
+                                                    c0.207-27.445,22.595-49.627,49.991-49.627c0.126,0,0.258,0.001,0.384,0.002c27.571,0.208,49.833,22.806,49.625,50.375
+                                                    C305.792,197.823,283.405,220.005,256.009,220.005z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M299.631,47.589c-5.202-1.846-10.921,0.879-12.767,6.085c-1.845,5.206,0.88,10.921,6.085,12.767
+                                                    c44.047,15.611,73.402,57.562,73.05,104.389c-0.041,5.522,4.402,10.033,9.925,10.075c0.025,0,0.051,0,0.077,0
+                                                    c5.486,0,9.956-4.428,9.998-9.925C386.415,115.633,351.706,66.046,299.631,47.589z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M317.357,376.442c66.513-85.615,108.08-130.26,108.641-205.164C426.702,77.035,350.22,0,255.984,0
+                                                    C162.848,0,86.71,75.428,86.002,168.728c-0.572,76.935,41.767,121.519,108.739,207.7C128.116,386.384,86.002,411.401,86.002,442
+                                                    c0,20.497,18.946,38.89,53.349,51.79c31.313,11.742,72.74,18.209,116.649,18.209s85.336-6.467,116.649-18.209
+                                                    c34.403-12.901,53.349-31.294,53.349-51.791C425.998,411.417,383.923,386.406,317.357,376.442z M106.001,168.879
+                                                    C106.625,86.55,173.8,20,255.986,20c83.159,0,150.633,67.988,150.013,151.129c-0.532,71.134-44.614,114.971-114.991,206.714
+                                                    c-12.553,16.356-24.081,31.82-34.993,46.947c-10.88-15.136-22.178-30.323-34.919-46.953
+                                                    C147.81,282.253,105.459,241.729,106.001,168.879z M256,492c-85.851,0-149.999-26.397-149.999-50
+                                                    c0-17.504,38.348-39.616,102.826-47.273c14.253,18.701,26.749,35.691,39.005,53.043c1.872,2.65,4.914,4.228,8.159,4.23
+                                                    c0.003,0,0.006,0,0.009,0c3.242,0,6.283-1.572,8.158-4.217c12.14-17.126,24.978-34.535,39.109-53.045
+                                                    c64.418,7.665,102.732,29.77,102.732,47.263C405.998,465.603,341.851,492,256,492z"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                </div>
+                                <div class="content">
+                                    <h3 class="text-color-6">Location</h3>
+                                    <p>629 12th St, Modesto, CA
+                                        95354 United States</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div><!-- End Info Item -->
+            </section>
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>{{ __('contact.email') }}</h3>
-                  <p>{{ $setting->email }}</p>
+            <section class="tf-section2 flat-contact">
+                <div class="mark-contact">
+                    {{-- <img src="{{ asset('frontend') }}/assets/images/mark/mark-contact.png" alt="images"> --}}
                 </div>
-              </div><!-- End Info Item -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="wrap-contact flex">
+                                <div class="box box-1">
+                                    <div class="flat-accordion fl-faq-content">
+                                        <h2 class="fw-7">FAQ?</h2>
+                                        <div class="flat-toggle">
+                                            <div class="toggle-title flex active"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="toggle-content section-desc">
+                                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
+                                            </div>
+                                        </div>
+                                        <div class="flat-toggle">
+                                            <div class="toggle-title flex"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="toggle-content section-desc">
+                                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
+                                            </div>
+                                        </div>
+                                        <div class="flat-toggle">
+                                            <div class="toggle-title flex"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="toggle-content section-desc">
+                                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
+                                            </div>
+                                        </div>
+                                        <div class="flat-toggle">
+                                            <div class="toggle-title flex"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="toggle-content section-desc">
+                                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box-2">
+                                    <div id="comments" class="comments">
+                                        <div id="respond" class="respond-comment">
+                                            <h2 class="fw-7">Leave A Message</h2>
+                                            <form method="post" id="contactform" class="comment-form form-submit"
+                                                action="./contact/contact-process.php" accept-charset="utf-8"
+                                                novalidate="novalidate">
+                                                <div class="text-wrap clearfix">
+                                                    <fieldset class="name-wrap style-text">
+                                                        <input type="text" id="name" class="tb-my-input" name="name"
+                                                            tabindex="1" placeholder="Name" value="" size="32"
+                                                            aria-required="true" required="">
+                                                    </fieldset>
+                                                    <fieldset class="email-wrap style-text">
+                                                        <input type="email" id="email" class="tb-my-input" name="email"
+                                                            tabindex="2" placeholder="Email" value="" size="32"
+                                                            aria-required="true" required="">
+                                                    </fieldset>
+                                                </div>
+                                                <fieldset class="website-wrap">
+                                                    <input type="url" id="text" class="tb-my-input" name="text"
+                                                        tabindex="2" placeholder="Subject" value="" size="32"
+                                                        aria-required="true" required="">
+                                                </fieldset>
+                                                <fieldset class="message-wrap">
+                                                    <textarea id="comment-message" name="message" rows="6" tabindex="5"
+                                                        placeholder="Message"
+                                                        aria-required="true"></textarea>
+                                                </fieldset>
 
-
-
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-               <div class="info-wrap ">
-                <div class="card-header bg mb-3 text-white text-center" style="background:#211689">
-      <h4 class="text-white pt-2 pb-2 ">Send Message</h4>
-    </div>
-            <form action="{{ route('contact.send') }}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">{{ __('contact.your_name') }}</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                                                <div class="buttons">
+                                                    <button name="submit" type="submit" id="comment-reply" class="blob-btn btn-style">
+                                                        Send Message
+                                                        <span class="blob-btn__inner">
+                                                        <span class="blob-btn__blobs">
+                                                            <span class="blob-btn__blob"></span>
+                                                            <span class="blob-btn__blob"></span>
+                                                            <span class="blob-btn__blob"></span>
+                                                            <span class="blob-btn__blob"></span>
+                                                        </span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">{{ __('contact.your_email') }}</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+            <section class="tf-map">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <iframe class="map-content"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">{{ __('contact.subject') }}</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">{{ __('contact.message') }}</label>
-                  <textarea class="form-control" name="description" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-
-                  {{-- <div class="sent-message">Your message has been sent. Thank you!</div> --}}
-
-                  <button class="btn text-white" style="background-color:#211689" type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-            <br/>
-            <br/>
-               </div>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-<div class="row">
-         <div class="col-lg-12">
-            <div class="card info-wrap mt-5">
-
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.06539203109097!2d91.41142420268991!3d24.939738629623655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750df000b952df9%3A0xae6e29a9b68a1b20!2sSultana%20Enterprise!5e1!3m2!1sen!2sbd!4v1747660351223!5m2!1sen!2sbd"
- frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-</div>
-        </div>
-</div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
+            </section>
 
 
 

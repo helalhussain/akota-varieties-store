@@ -3,10 +3,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div id="site-header-inner">
-                                <div class="wrap-box relative">
+                                <div class="relative wrap-box">
                                     <div id="site-logo" class="clearfix">
                                         <div id="site-logo-inner">
-                                            <a href="index.html" rel="home" class="main-logo">
+                                            <a href="/" rel="home" class="main-logo">
                                                 <img id="logo_header"
                                                     src="{{ asset('frontend') }}/assets/images/logo/logo.png"
                                                     alt="img" width="169" height="42">
@@ -29,19 +29,21 @@
                                             <li class="menu-item current-menu-item">
                                                 <a href="/">Home </a>
                                             </li>
-                                             <li class="menu-item">
-                                                <a href="#">About Us </a>
+                                            <li class="menu-item">
+                                                <a href="{{ route('product.index') }}">Product </a>
                                             </li>
                                             <li class="menu-item">
-                                                <a href="#">Items </a>
+                                                <a href="{{ route('about.index') }}">About Us </a>
                                             </li>
+
                                             <li class="menu-item">
-                                                <a href="#">Contact </a>
+                                                <a href="{{ route('contact.index') }}">Contact </a>
                                             </li>
+
                                         </ul>
                                     </nav><!-- /#main-nav -->
-                                    {{-- <div class="flat-button-top flex">
-                                        <div class="header-search flat-show-search flex" id="s1">
+                                    {{-- <div class="flex flat-button-top">
+                                        <div class="flex header-search flat-show-search" id="s1">
                                             <a href="#" class="show-search header-search-trigger">
                                                 <span class="icon-Vector"><i class="far fa-search"></i></span>
                                             </a>

@@ -18,20 +18,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-3 col-6">
+                    <div class="col-lg-2 col-md-8 col-8">
                         <div class="widget widget-menu style-2 ">
                             <div class="title-widget fw-6">Quick Links</div>
                             <ul class="box-menu link-style-4">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="project-details.html">Project Details</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="projects.html">Our Project</a></li>
-                                <li><a href="product-details.html">Best Products</a></li>
+                                <li><a href="{{ route('home.page') }}">Home</a></li>
+                                <li><a href="{{ route('product.index') }}l">Product</a></li>
+                                <li><a href="{{ route('about.index') }}l">About Us</a></li>
+                                <li><a href="{{ route('contact.index') }}">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6">
+                    <div class="col-lg-2 col-md-3 col-4">
                         <div class="widget widget-menu style-3 ">
                             <ul class="box-menu link-style-4">
                                 <li><a href="shop-grid.html"> Shop Grid</a></li>
@@ -48,7 +46,7 @@
                         <div class="widget widget-menu style-4">
                             <div class="title-widget fw-6">Recent Post</div>
                             <ul class="recent-news ">
-                                <li class="hover-img flex">
+                                <li class="flex hover-img">
                                     <div class="thumb img-style ">
                                         <a href="blog-details.html"><img class="img" src="{{ asset('frontend') }}/assets/images/blog/pots-1.jpg" alt="images"></a>
                                     </div>
@@ -57,7 +55,7 @@
                                         <h6 class="days fw-4">10 June, 2022</h6>
                                     </div>
                                 </li>
-                                <li class="hover-img flex">
+                                <li class="flex hover-img">
                                     <div class="thumb img-style ">
                                         <a href="blog-details.html"><img class="img" src="{{ asset('frontend') }}/assets/images/blog/pots-2.jpg" alt="images"></a>
                                     </div>

@@ -9,7 +9,6 @@ use App\Http\Controllers\Admin\{
     DashboardController,
     AdminController,
     ProfileController,
-    UserController,
     ServiceController,
     GalleryController,
     StaffController,
