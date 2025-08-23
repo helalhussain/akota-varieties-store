@@ -32,31 +32,31 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <div class="box-icon flex">
+                            <div class="flex box-icon">
                                 <div class="icon">
                                      <svg enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="32" xmlns="http://www.w3.org/2000/svg"><g><path d="m336.999 0c-8.284 0-15 6.715-15 14.999 0 8.284 6.716 15 15 15 79.954.001 145.001 65.048 145.001 145.002 0 8.284 6.716 15 15 15 8.284 0 14.999-6.716 14.999-15 .001-96.651-78.349-175.001-175-175.001z"/><path d="m337 90c46.869 0 85 38.132 85.001 85 0 8.284 6.716 15 15 15 8.284 0 14.999-6.716 14.999-15 0-63.513-51.487-115-115-115-8.285 0-15 6.716-15 15 0 8.284 6.716 15 15 15z"/><path d="m322 135.001c0 8.284 6.716 15 15 15 6.977 0 13.518 2.839 18.303 7.97 4.416 4.735 6.697 11.078 6.697 17.553 0 7.996 6.481 14.477 14.477 14.477h.523c8.284 0 14.999-6.716 14.999-15 0-30.375-24.624-55-55-55-8.284 0-14.999 6.715-14.999 15z"/><path d="m433.193 305.081c-17.546-17.546-46.094-17.545-63.64 0l-33.682 33.682c-4.839 4.839-12.244 5.855-18.007 2.47-20.149-11.836-50.847-32.623-82.661-64.437-31.814-31.813-52.601-62.511-64.437-82.661-3.385-5.763-2.369-13.168 2.47-18.007l33.682-33.682c17.546-17.546 17.546-46.094 0-63.64l-63.64-63.64c-17.546-17.546-46.094-17.545-63.64 0l-52.894 52.9c-.003.003-.003.003-.006.006-14.184 14.184-23.128 32.199-25.865 52.093-2.722 19.791.953 39.554 10.627 57.152 37.886 68.916 82.007 127.49 138.85 184.334 56.844 56.843 115.418 100.964 184.334 138.851 17.597 9.674 37.36 13.349 57.151 10.626 19.898-2.737 37.913-11.683 52.099-25.871l52.899-52.895c17.546-17.546 17.546-46.094 0-63.64zm-332.341-268.701c5.849-5.849 15.365-5.849 21.214 0l63.64 63.64c5.849 5.849 5.848 15.365 0 21.214l-10.607 10.607-84.854-84.854zm321.867 427.665c-19.229 19.232-49.487 23.412-73.582 10.167-66.365-36.484-122.789-78.992-177.573-133.775-54.784-54.784-97.292-111.209-133.776-177.573-13.245-24.094-9.066-54.35 10.163-73.579.001-.001.002-.002.003-.004l21.082-21.078 84.849 84.849-1.863 1.863c-14.498 14.498-17.427 36.874-7.124 54.415 12.722 21.658 35.036 54.624 69.091 88.679s67.021 56.369 88.679 69.091c17.541 10.303 39.917 7.374 54.415-7.124l1.863-1.863 84.849 84.849zm52.901-52.897-10.607 10.607-84.853-84.854 10.607-10.607c5.849-5.849 15.365-5.849 21.214 0l63.64 63.64c5.848 5.849 5.848 15.365-.001 21.214z"/></g></svg>
                                 </div>
                                 <div class="content">
                                     <h3 class="text-color-6">Phone</h3>
-                                    <a href="tel:0123456789"><p>+(111)65-458-856</p></a>
-                                    <a href="tel:0123456789"><p>+(111)65-458-856</p></a>
+                                    <a href="tel:0123456789"><p>{{ $setting->contact_no }}</p></a>
+                                    {{-- <a href="tel:0123456789"><p>+(111)65-458-856</p></a> --}}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <div class="box-icon flex">
+                            <div class="flex box-icon">
                                 <div class="icon">
                                     <svg height="33" viewBox="0 0 125 125" width="33" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m105.182 97.82h-85.364a10.477 10.477 0 0 1 -10.465-10.466v-52.72a10.477 10.477 0 0 1 10.465-10.466h85.364a10.477 10.477 0 0 1 10.465 10.466v52.72a10.477 10.477 0 0 1 -10.465 10.466zm-85.364-69.652a6.472 6.472 0 0 0 -6.465 6.466v52.72a6.472 6.472 0 0 0 6.465 6.466h85.364a6.472 6.472 0 0 0 6.465-6.466v-52.72a6.472 6.472 0 0 0 -6.465-6.466z"/><path d="m62.5 72.764a2 2 0 0 1 -1.324-.5l-48.2-42.548 2.647-3 46.877 41.384 46.879-41.379 2.647 3-48.2 42.548a1.994 1.994 0 0 1 -1.326.495z"/><path d="m5.012 72.393h49.061v4h-49.061z" transform="matrix(.66 -.752 .752 .66 -45.859 47.529)"/><path d="m93.454 49.862h4v49.062h-4z" transform="matrix(.752 -.66 .66 .752 -25.361 81.43)"/></svg>
                                 </div>
                                 <div class="content">
                                     <h3 class="text-color-6">Email</h3>
-                                    <a href="info:company@.com"><p>company@.com</p></a>
-                                    <a href="info:company@.com"><p>career@example.com</p></a>
+                                    <a href="info:company@.com"><p>{{ $setting->email }}</p></a>
+                                    {{-- <a href="info:company@.com"><p>career@example.com</p></a> --}}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <div class="box-icon style3 flex">
+                            <div class="flex box-icon style3">
                                 <div class="icon">
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
@@ -100,8 +100,7 @@
                                 </div>
                                 <div class="content">
                                     <h3 class="text-color-6">Location</h3>
-                                    <p>629 12th St, Modesto, CA
-                                        95354 United States</p>
+                                    <p>{{ $setting->address }}</p>
                                 </div>
                             </div>
                         </div>
@@ -116,44 +115,91 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
-                            <div class="wrap-contact flex">
+                            <div class="flex wrap-contact">
                                 <div class="box box-1">
-                                    <div class="flat-accordion fl-faq-content">
+                                    {{-- <div class="flat-accordion fl-faq-content">
                                         <h2 class="fw-7">FAQ?</h2>
                                         <div class="flat-toggle">
-                                            <div class="toggle-title flex active"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="flex toggle-title active"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
                                             <div class="toggle-content section-desc">
                                                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
                                             </div>
                                         </div>
                                         <div class="flat-toggle">
-                                            <div class="toggle-title flex"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="flex toggle-title"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
                                             <div class="toggle-content section-desc">
                                                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
                                             </div>
                                         </div>
                                         <div class="flat-toggle">
-                                            <div class="toggle-title flex"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="flex toggle-title"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
                                             <div class="toggle-content section-desc">
                                                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
                                             </div>
                                         </div>
                                         <div class="flat-toggle">
-                                            <div class="toggle-title flex"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
+                                            <div class="flex toggle-title"><div class="btn-toggle"></div><h5>Your email address will not be published?</h5>  </div>
                                             <div class="toggle-content section-desc">
                                                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
+                                    <!----Business hourse---->
+              <div>
+                <div class=" hours-card">
+  {{-- <div class="shadow card"> --}}
+    <div class="text-center text-white card-header bg" style="background:#16891e">
+      <h4 class="pt-2 pb-2 text-white " style="color:white;">Business Hours</h4>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex justify-content-between">
+        {{-- <span>Monday <br><small class="special-note">(Buddha Purnima – hours may vary)</small></span> --}}
+        {{-- <span>9:00 AM – 7:00 PM</span> --}}
+      </li>
+        <li class="list-group-item d-flex justify-content-between">
+        <span>Monday</span>
+        <span>9:00 AM – 7:00 PM</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Tuesday</span>
+        <span>9:00 AM – 7:00 PM</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Wednesday</span>
+        <span>9:00 AM – 7:00 PM</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Thursday</span>
+        <span>9:00 AM – 7:00 PM</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Friday</span>
+        <span class="closed">Closed</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Saturday</span>
+        <span>9:00 AM – 7:00 PM</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Sunday</span>
+        <span>9:00 AM – 7:00 PM</span>
+      </li>
+    </ul>
+  {{-- </div> --}}
+</div>
+              </div>
+
+              <!----End business hourse----->
                                 </div>
+
                                 <div class="box box-2">
                                     <div id="comments" class="comments">
                                         <div id="respond" class="respond-comment">
-                                            <h2 class="fw-7">Leave A Message</h2>
+                                            <h2 class="fw-7">Message</h2>
                                             <form method="post" id="contactform" class="comment-form form-submit"
                                                 action="./contact/contact-process.php" accept-charset="utf-8"
                                                 novalidate="novalidate">
-                                                <div class="text-wrap clearfix">
+                                                <div class="clearfix text-wrap">
                                                     <fieldset class="name-wrap style-text">
                                                         <input type="text" id="name" class="tb-my-input" name="name"
                                                             tabindex="1" placeholder="Name" value="" size="32"
