@@ -3,22 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Slide;
 use App\Models\About;
 use App\Models\Gallery;
 use App\Models\Staff;
 use App\Models\Service;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
     public function home(){
 
-
+$products = Product::all();
         $aboutus= About::first();
         $staffs= Staff::all();
         $galleries= Gallery::all();
         $services = Service::all();
-        return view('welcome',compact('galleries','aboutus','staffs','services'));
+        return view('welcome',compact('galleries','aboutus','staffs','services','products'));
     }
 
     public function show($id)
