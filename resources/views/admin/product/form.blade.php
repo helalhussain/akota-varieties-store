@@ -9,6 +9,7 @@
     @endisset
 
     <x-admin.form-group label="name" placeholder="Enter product name" :value="$product->name ?? ''" required/>
+    <x-admin.form-group label="brand" placeholder="Enter product brand" :value="$product->brand ?? ''" required/>
 
         <x-admin.form-group
         label="file"

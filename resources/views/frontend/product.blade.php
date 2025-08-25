@@ -32,13 +32,13 @@
                         @foreach ($products as $product)
                             <div class="box" style="padding: 1px">
                                 <div class="images">
-                                    <img src="{{ asset('frontend') }}/assets/images/img-box/Category-1.png" alt="images">
+                                    <img src="{{ uploaded_file($product->image) }}" alt="images">
                                 </div>
                                 <div class="content">
                                     <div class="title link-style-5">
                                         <h4>{{ $product->name }}</h4>
                                     </div>
-                                    {{-- <p>9 Product</p> --}}
+                                    <p class="" style="margin-bottom: 10px!important;">{{ $product->brand }}</p>
                                 </div>
                             </div>
                         @endforeach

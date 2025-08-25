@@ -52,7 +52,7 @@ class ProductController extends Controller
 
         $store = new Product();
         $store->name = $request->name;
-        // $store->title_bn = $request->title_bn;
+        $store->brand = $request->brand;
         $store->image =  $file;
         $store->save();
         return response()->json([
@@ -94,10 +94,12 @@ class ProductController extends Controller
         if($request->file==null){
             $product->update([
                 'name'=>$request->name,
+                'brand'=>$request->brand,
         ]);
         }else{
             $product->update([
                 'name'=>$request->name,
+                'brand'=>$request->brand,
                 'image'=>file_upload($request->file, 'product')
 
         ]);

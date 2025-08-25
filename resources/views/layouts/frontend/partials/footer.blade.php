@@ -10,17 +10,19 @@
                                         <img id="logo_footer" src="{{ asset('frontend') }}/assets/images/logo/logo-footer.png" alt="img" width="169" height="42">
                                     </a>
                                 </div>
-                                <p class="sub-widget-logo lh-28">There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form,  </p>
-                                <h6 class="">Address: <span class="fw-4">4710-4890 Breckinridge USA </span> </h6>
-                                <h6 class="link-style-4">Email: <a href="info:comapny@hasthemes.com " class="fw-4">comapny@hasthemes.com </a> </h6>
-                                <h6 class="link-style-4">Call us: <a href="tel:012345678" class="fw-4">(08) 22 455 789</a> </h6>
+                                <p class="sub-widget-logo lh-28">
+                                    We are a trusted grocery store offering fresh, quality
+                                     products at fair prices. Our goal is to serve the
+                                     community with convenience, care, and satisfaction.
+                                  </p>
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-2 col-md-8 col-8">
                         <div class="widget widget-menu style-2 ">
-                            <div class="title-widget fw-6">Quick Links</div>
+                            <div class="title-widget fw-6">Pages</div>
                             <ul class="box-menu link-style-4">
                                 <li><a href="{{ route('home.page') }}">Home</a></li>
                                 <li><a href="{{ route('product.index') }}">Product</a></li>
@@ -29,7 +31,17 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-4">
+                                        <div class="col-lg-2 col-md-8 col-8">
+                        <div class="widget widget-menu style-2 ">
+                            <div class="title-widget fw-6">Services</div>
+                            <ul class="box-menu link-style-4">
+                                <li><a href="#">Retail sell</a></li>
+                                <li><a href="#">Wholesale</a></li>
+                                <li><a href="#">Electronic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    {{-- <div class="col-lg-2 col-md-3 col-4">
                         <div class="widget widget-menu style-3 ">
                             <ul class="box-menu link-style-4">
                                 <li><a href="shop-grid.html"> Shop Grid</a></li>
@@ -40,32 +52,21 @@
                                 <li><a href="contact.html">Blog Details</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="widget widget-menu style-4">
-                            <div class="title-widget fw-6">Recent Post</div>
-                            <ul class="recent-news ">
-                                <li class="flex hover-img">
-                                    <div class="thumb img-style ">
-                                        <a href="blog-details.html"><img class="img" src="{{ asset('frontend') }}/assets/images/blog/pots-1.jpg" alt="images"></a>
-                                    </div>
-                                    <div class="content link-style-3">
-                                        <h5 class="fw-6"><a href="blog-details.html">Unicode UTF8 Character Sets  They Sltimate Guide Systems</a></h5>
-                                        <h6 class="days fw-4">10 June, 2022</h6>
-                                    </div>
-                                </li>
-                                <li class="flex hover-img">
-                                    <div class="thumb img-style ">
-                                        <a href="blog-details.html"><img class="img" src="{{ asset('frontend') }}/assets/images/blog/pots-2.jpg" alt="images"></a>
-                                    </div>
-                                    <div class="content link-style-3">
-                                        <h5 class="fw-6"><a href="blog-details.html">Unicode UTF8 Character Sets  They Sltimate Guide Systems</a></h5>
-                                        <h6 class="days fw-4">10 June, 2022</h6>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="widget widget-menu widget-logo style-4">
+                            <div class="title-widget fw-6">Contact Us</div>
+                           <div class="flat-box">
+
+
+                                <h6 class="">Address: <span class="fw-4"> {{ $setting->address }} </span> </h6>
+                                <h6 class="link-style-4">Email: <a href="info:comapny@hasthemes.com " class="fw-4">{{ $setting->email }}</a> </h6>
+                                <h6 class="link-style-4">Call us: <a href="tel:012345678" class="fw-4">{{ $setting->contact_no }}</a> </h6>
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
