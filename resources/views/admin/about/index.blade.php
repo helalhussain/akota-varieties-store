@@ -23,26 +23,18 @@
 
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        {{-- <div class="mb-3">
-                                            <label for="" class="form-label">About Us <span class="text-danger">*</span></label>
-                                            <textarea type="text" name="about_us" class="form-control"  required>
-                                                {{ $about_us->about_us }}
-                                            </textarea>
-                                            <span class="text-danger"></span>
-                                        </div> --}}
+
                                         <label for="" class="form-label">About Us <span class="text-danger">*</span></label>
                                         <br/>
                                     <textarea  class="form-control your_summernote" name="about_us" rows="5" placeholder="Type here">
                                         {!! $about_us->about_us !!}
                                     </textarea>
-                                    <label for="" class="form-label">আমাদের সম্পর্কে <span class="text-danger">*</span></label>
+                                    {{-- <label for="" class="form-label">আমাদের সম্পর্কে <span class="text-danger">*</span></label>
                                     <br/>
                                     <textarea  class="form-control your_summernote" name="about_us_bn" rows="5" placeholder="Type here">
                                         {!! $about_us->about_us_bn !!}
-                                    </textarea>
-                                {{-- @error('description')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror --}}
+                                    </textarea> --}}
+
                                 </div>
                                 <x-admin.form-group
                                 label="file"
@@ -101,7 +93,7 @@
             <div class="row gy-3">
                 <x-admin.form-group label="site_name" value="{{ $setting->site_name }}" column="col-lg-6" />
 
-                <div class="col-12 mt-4">
+                <div class="mt-4 col-12">
                     <x-admin.submit-button text="Update" class="w-10" />
                 </div>
             </div>

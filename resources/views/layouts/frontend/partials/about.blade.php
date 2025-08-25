@@ -1,53 +1,65 @@
     <!-- About Section -->
-    <section id="about" class="about section">
+      <section class="tf-section2 flat-about home2" style="background:white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-style">
+                            <div class="wrap-img">
+                                  <section class="tf-section flat-shop-sidebar page style-left">
+                                   <div class="flat-vegetables">
+                                    <div class="wrap-vegetables">
+                                        <div class="flex box box-hv">
+                                            <div class="image">
+                                                    <img src="{{ uploaded_file($aboutus->image) }}" alt="images">
+                                            </div>
+                                            <div class="content">
+                                                <div class="titles title-30 fw-6 link-style-1">
+                                                    {{ $aboutus->name }}
+                                                </div>
+                                                <div class="money">
+                                                 <span class="two">{{ $aboutus->designation }}</span>
+                                                </div>
 
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>ABOUT US</h2>
-          {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
-        </div><!-- End Section Title -->
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
 
-        <div class="container">
+                                            </div>
+                                        </div>
 
-          <div class="row gy-4">
-            <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-              {{-- <img src="{{ uploaded_file($aboutus->image) }}" class="img-fluid img-thumbnail"
-              style="width:100%"alt=""> --}}
-              {{-- <button class="btn btn-success" >Learn More</button> --}}
-<section class="py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-        <div class="text-center col-md-6">
-        <img src="{{ uploaded_file($aboutus->image) }}" alt="About me image" class="rounded shadow img-fluid">
-      </div>
-      <div class="col-md-6">
-        <h3 class="mb-4">{{ $aboutus->name }}</h3>
-        <p class="mb-3">
-        {{ $aboutus->about_owner }}
-        </p>
+                                    </div>
 
-      </div>
+                                </div>
+                            </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="wrap-about">
+                                <div class="heading-section">
+                                    <h2>About Us</h2>
+                                    {{-- <h4>We Believe in Working
+                                        Accredited Farmers</h4> --}}
+                                    <p>
+                                        {!! $aboutus->about_us !!}
+                                    </p>
+                                </div>
 
-    </div>
-  </div>
-</section>
-            </div>
-            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-              {{-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3> --}}
-             <div id="content">
-                <p class="fst-italic" id="fullText">
-                    {!! $aboutus->about_us !!}
-                    {{-- {{ $aboutus->about_us }} --}}
-                   </p>
-             </div>
-              <p id="shortContent"></p>
-              <a href="{{ route('about.index') }}" id="readMoreBtn" class="text-white btn" style="background-color:#211689" onclick="toggleText()">Read More</a>
-            </div>
-          </div>
 
-        </div>
-
-      </section><!-- /About Section -->
+                                <div class="buttons">
+                                    <a href="{{ route('about.index') }}" class="blob-btn btn-style">
+                                        Read more
+                                        <span class="blob-btn__inner">
+                                        <span class="blob-btn__blobs">
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                        </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 <script>
 
 const contentEl = document.getElementById("content");

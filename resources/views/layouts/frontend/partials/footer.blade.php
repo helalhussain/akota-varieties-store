@@ -23,8 +23,8 @@
                             <div class="title-widget fw-6">Quick Links</div>
                             <ul class="box-menu link-style-4">
                                 <li><a href="{{ route('home.page') }}">Home</a></li>
-                                <li><a href="{{ route('product.index') }}l">Product</a></li>
-                                <li><a href="{{ route('about.index') }}l">About Us</a></li>
+                                <li><a href="{{ route('product.index') }}">Product</a></li>
+                                <li><a href="{{ route('about.index') }}">About Us</a></li>
                                 <li><a href="{{ route('contact.index') }}">Contact Us</a></li>
                             </ul>
                         </div>

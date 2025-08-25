@@ -120,6 +120,7 @@
         </div>
     </section>
 
+        @include('layouts.frontend.partials.about')
     <!--Item and products--->
     @include('layouts.frontend.partials.product')
 
@@ -127,17 +128,17 @@
         <div class="container">
             <div class="row">
                        <div class="col-lg-12 col-md-12">
-                    <div class="heading-section center pt-5">
+                    <div class="pt-5 heading-section center">
                         {{-- <h5>Organic Products</h5> --}}
                         <br/><br/>
                         <h2 class="pt-5"> Our Staff</h2>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="wrap-vegetables flex">
+                    <div class="flex wrap-vegetables">
                         @foreach ($staffs as $staff)
                             <div class="box box-hv">
-                                <div class="images m-5" style="">
+                                <div class="m-5 images" style="">
                                     <img src="{{ uploaded_file($staff->image) }}" alt="images">
                                 </div>
                                 <div class="content">

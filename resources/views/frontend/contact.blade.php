@@ -148,8 +148,8 @@
               <div>
                 <div class=" hours-card">
   {{-- <div class="shadow card"> --}}
-    <div class="text-center text-white card-header bg" style="background:#16891e">
-      <h4 class="pt-2 pb-2 text-white " style="color:white;">Business Hours</h4>
+    <div class="text-center text-white card-header bg" style="">
+      <h4 class="pt-2 pb-2 text-white " style="color:green;">Business Hours</h4>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item d-flex justify-content-between">
