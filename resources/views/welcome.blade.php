@@ -1,24 +1,53 @@
 
-
  @extends('layouts.frontend.app')
 
 @section('content')
 
+ {{-- <section id="hero" class="hero section accent-background">
 
-@include('layouts.frontend.partials.header')
-{{-- @include('layouts.frontend.partials.topnav') --}}
-  <main class="main">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-{{-- @include('layouts.frontend.partials.hero') --}}
+        <div class="carousel-item active">
+          <img src="{{ asset('frontend') }}/assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Welcome to Green</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
 
+        <div class="carousel-item">
+          <img src="{{ asset('frontend') }}/assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="carousel-container">
+            <h2>At vero eos et accusamus</h2>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
 
+        <div class="carousel-item">
+          <img src="{{ asset('frontend') }}/assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Temporibus autem quibusdam</h2>
+            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
 
-@include('layouts.frontend.partials.about')
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
 
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
 
- @include('layouts.frontend.partials.item')
+        <ol class="carousel-indicators"></ol>
 
+      </div>
 
+</section><!-- /Hero Section --> --}}
+@include('layouts.frontend.partials.product')
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
@@ -63,53 +92,10 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Staff</h2>
-        {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
 
 
+@include('layouts.frontend.partials.staff')
 
-   @foreach ($staffs as $staff)
-   <div class="mx-auto col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-    <div class="shadow-lg member">
-      <img src="{{ uploaded_file($staff->image) }}" style=" width:100%; margin: -1px -1px 22px -1px;" class="p-2 img-fluid img-thumbnai" alt="">
-      <div class="member-content">
-        <h4 class="">{{ $staff->name }}</h4>
-        <h5 class="">{{ $staff->designation }}</h5>
-        {{-- <p>
-          Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-        </p> --}}
-        {{-- <div class="social">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div> --}}
-      </div>
-    </div>
-  </div><!-- End Team Member -->
-
-
-   @endforeach
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
-
-
-  </main>
 
 
 
