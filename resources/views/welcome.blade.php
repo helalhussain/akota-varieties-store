@@ -1,163 +1,116 @@
-@extends('layouts.frontend.app')
+
+
+ @extends('layouts.frontend.app')
+
 @section('content')
-    <!-- slider -->
-    <section class="slider home">
-        <div class="swiper-container mainslider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider-item">
-                        <div class="flat-slider">
-                            <div class="img-slider">
-                                <img class="img-item" src="{{ asset('frontend') }}/assets/images/slider/slider-01.jpg"
-                                    alt="">
-                            </div>
-                            <div class="container">
-                                <div class="content">
-                                    <div class="heading">
-                                        <div class="sub-title">Wellcome to Vikan</div>
-                                        <h1>High Quality Fresh
-                                            Organic Products.</h1>
-                                        <h3>25 Years of experience in agriculture farming</h3>
-                                    </div>
-                                    <div class="flat-bt-slider">
-                                        <div class="sl-button buttons">
-                                            <a class="blob-btn btn-1 btn-style" href="shop-grid.html">
-                                                Shop Organic
-                                                <span class="blob-btn__inner">
-                                                    <span class="blob-btn__blobs">
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="slider-item">
-                        <div class="flat-slider">
-                            <div class="img-slider">
-                                <img class="img-item" src="{{ asset('frontend') }}/assets/images/slider/slider-01.jpg"
-                                    alt="">
-                            </div>
-                            <div class="container">
-                                <div class="content">
-                                    <div class="heading">
-                                        <div class="sub-title">Wellcome to Vikan</div>
-                                        <h1>High Quality Fresh
-                                            Organic Products.</h1>
-                                        <h3>25 Years of experience in agriculture farming</h3>
-                                    </div>
-                                    <div class="flat-bt-slider">
-                                        <div class="sl-button buttons">
-                                            <a class="blob-btn btn-1 btn-style" href="shop-grid.html">
-                                                Shop Organic
-                                                <span class="blob-btn__inner">
-                                                    <span class="blob-btn__blobs">
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="slider-item">
-                        <div class="flat-slider">
-                            <div class="img-slider">
-                                <img class="img-item" src="{{ asset('frontend') }}/assets/images/slider/slider-01.jpg"
-                                    alt="">
-                            </div>
-                            <div class="container">
-                                <div class="content">
-                                    <div class="heading">
-                                        <div class="sub-title">Wellcome to Vikan</div>
-                                        <h1>High Quality Fresh
-                                            Organic Products.</h1>
-                                        <h3>25 Years of experience in agriculture farming</h3>
-                                    </div>
-                                    <div class="flat-bt-slider">
-                                        <div class="sl-button buttons">
-                                            <a class="blob-btn btn-1 btn-style" href="shop-grid.html">
-                                                Shop Organic
-                                                <span class="blob-btn__inner">
-                                                    <span class="blob-btn__blobs">
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                        <span class="blob-btn__blob"></span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+@include('layouts.frontend.partials.header')
+{{-- @include('layouts.frontend.partials.topnav') --}}
+  <main class="main">
+
+{{-- @include('layouts.frontend.partials.hero') --}}
+
+
+
+@include('layouts.frontend.partials.about')
+
+
+ @include('layouts.frontend.partials.item')
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+
+
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+     @foreach ($galleries as $gallery)
+       <div class="col-lg-3 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="{{ uploaded_file($gallery->image) }}"
+                style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
+                <img src="{{ uploaded_file($gallery->image) }}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="#" title="More Details">{{ $gallery->title }}</a></h4>
+                  {{-- <p>Lorem ipsum, dolor sit amet consectetur</p> --}}
                 </div>
-            </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+     @endforeach
+
+
+          </div><!-- End Portfolio Container -->
+
         </div>
-        <div class="swiper-pagination2"> </div>
-        <div class="button-custom-slider">
-            <div class="swiper-button-next2 button-slide-custom-next">next <i class="far fa-arrow-circle-right"></i></div>
-            <div class="swiper-button-prev2 button-slide-custom-prev">prev </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Staff</h2>
+        {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+
+
+   @foreach ($staffs as $staff)
+   <div class="mx-auto col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+    <div class="shadow-lg member">
+      <img src="{{ uploaded_file($staff->image) }}" style=" width:100%; margin: -1px -1px 22px -1px;" class="p-2 img-fluid img-thumbnai" alt="">
+      <div class="member-content">
+        <h4 class="">{{ $staff->name }}</h4>
+        <h5 class="">{{ $staff->designation }}</h5>
+        {{-- <p>
+          Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+        </p> --}}
+        {{-- <div class="social">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div> --}}
+      </div>
+    </div>
+  </div><!-- End Team Member -->
+
+
+   @endforeach
+
         </div>
-    </section>
 
-        @include('layouts.frontend.partials.about')
-    <!--Item and products--->
-    @include('layouts.frontend.partials.product')
+      </div>
 
-    <section class="flat-vegetables page">
-        <div class="container">
-            <div class="row">
-                       <div class="col-lg-12 col-md-12">
-                    <div class="pt-5 heading-section center">
-                        {{-- <h5>Organic Products</h5> --}}
-                        <br/><br/>
-                        <h2 class="pt-5"> Our Staff</h2>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="flex wrap-vegetables">
-                        @foreach ($staffs as $staff)
-                            <div class="box box-hv">
-                                <div class="m-5 images" style="">
-                                    <img src="{{ uploaded_file($staff->image) }}" alt="images">
-                                </div>
-                                <div class="content">
-
-                                    <h3 class="link-style-6"><a href="product-details.html">{{ $staff->name }}</a> </h3>
-                                    <div class="money">
-                                        <span class="">{{ $staff->designation }}</span>
-
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </section><!-- /Team Section -->
 
 
 
-@endsection
+  </main>
+
+
+
+  @endsection
