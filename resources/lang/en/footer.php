@@ -22,7 +22,7 @@ return [
     'wholesaler' =>'Wholesaling',
     'retail' => 'Retail Selling',
     'stone' =>'Stone, Sand and Bricks',
-    'footer_about'=>'We supply high-quality stone, sand, and bricks for construction projects, ensuring reliable delivery, competitive pricing, and excellent service to builders, contractors, and developers.',
+    'footer_about'=>'We are your trusted neighborhood grocery shop, offering fresh produce, quality essentials, and friendly service to make your daily shopping convenient, affordable, and enjoyable.',
 
 
 

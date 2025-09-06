@@ -1,3 +1,10 @@
+
+
+
+ @extends('layouts.frontend.app')
+
+@section('content')
+
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -32,3 +39,9 @@
       </div>
 
     </section><!-- /Services Section -->
+
+
+
+
+
+  @endsection

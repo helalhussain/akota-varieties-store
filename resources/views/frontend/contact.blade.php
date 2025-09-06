@@ -25,7 +25,7 @@
                         <div>
                             <div class="container hours-card">
                                 {{-- <div class="shadow card"> --}}
-                                <div class="text-center text-white card-header bg" style="background:#211689">
+                                <div class="text-center text-white card-header bg" style="background:#fc7804">
                                     <h4 class="pt-2 pb-2 text-white">Business Hours</h4>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -99,7 +99,7 @@
 
                 <div class="col-lg-7">
                     <div class="info-wrap ">
-                        <div class="mb-3 text-center text-white card-header bg" style="background:#211689">
+                        <div class="mb-3 text-center text-white card-header bg" style="background:#fc7804">
                             <h4 class="pt-2 pb-2 text-white ">Send Message</h4>
                         </div>
                         <form action="{{ route('contact.send') }}" method="POST" enctype="multipart/form-data">
@@ -133,7 +133,7 @@
 
                                     {{-- <div class="sent-message">Your message has been sent. Thank you!</div> --}}
 
-                                    <button class="text-white btn" style="background-color:#211689" type="submit">Send
+                                    <button class="text-white btn" style="background-color:#fc7804" type="submit">Send
                                         Message</button>
                                 </div>
 
@@ -151,10 +151,10 @@
                     <div class="mt-5 card info-wrap">
 
 
-                        <iframe
+                        {{-- <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.06539203109097!2d91.41142420268991!3d24.939738629623655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750df000b952df9%3A0xae6e29a9b68a1b20!2sSultana%20Enterprise!5e1!3m2!1sen!2sbd!4v1747660351223!5m2!1sen!2sbd"
                             frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
 
 
                     </div>

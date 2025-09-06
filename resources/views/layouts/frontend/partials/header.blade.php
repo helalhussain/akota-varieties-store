@@ -1,67 +1,8 @@
-  {{-- <header id="header" class="header sticky-top">
-
-    <div class="topbar d-flex align-items-center accent-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-cente">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="{{ asset('frontend') }}/assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Green</h1>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-      </div>
-
-    </div>
-
-  </header> --}}
 
 
-  <header id="header" class="header sticky-top">
 
+  <header id="header" class="header sticky-top" style="box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+{{--
     <div class="topbar d-flex align-items-center accent-background">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
@@ -69,34 +10,35 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ $setting->contact_no }}</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          {{-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> --}}
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
 
         </div>
       </div>
-    </div><!-- End Top Bar -->
+    </div><!-- End Top Bar --> --}}
 
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="{{ route('home.page') }}" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="{{ uploaded_file($logoIcon->logo) }}" alt="">
-          {{-- <h1 class="sitename">Green</h1> --}}
+          {{-- <img src="{{ uploaded_file($logoIcon->logo) }}" alt=""> --}}
+          <h1 class="sitename">Akota Variety</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             {{-- <a href="#">{{ __('translate.documentation') }}</a> --}}
-            <li><a href="{{ route('home.page') }}" class="active">{{ __('header.home') }}</a></li>
-                       <li><a href="{{ route('product.index') }}">Products</a></li>
-            <li><a href="{{ route('about.index') }}">{{ __('header.aboutus') }}</a></li>
+            <li><a href="{{ route('home.page') }}" class="active">HOME</a></li>
 
-      
+            <li><a href="{{ route('product.index') }}">PRODUCT</a></li>
+            <li><a href="{{ route('about.index') }}">ABOUT US</a></li>
 
-            <li><a href="{{ route('contact.index') }}">{{ __('header.contactus') }}</a></li>
+
+
+            <li><a href="{{ route('contact.index') }}">CONTACT US</a></li>
             <li>
                 <select name="" class="form-control top-selector language_switcher">
                     <option>{{ Config::get('languages')[App::getLocale()] }}</option>

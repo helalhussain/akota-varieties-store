@@ -1,20 +1,21 @@
- <footer id="footer" class="footer dark-background">
+ <footer id="footer" class="footer dark-background"
+ style="background-color:#0b1a00; color:white!important; font-weight: bold">
 
-    <div class="container footer-top">
+    <div class="container footer-top" style="">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="#" class="logo d-flex align-items-center">
 
             <img src="{{ uploaded_file($logoIcon->logo) }}" alt="">
           </a>
-          <p>
+          <p style="color:">
             {{ __('footer.footer_about') }}</p>
           <div class="mt-4 social-links d-flex">
 
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="col-lg-2 col-6 footer-links" >
             <h4>{{ __('footer.page') }}</h4>
           <ul>
             <li><a href="{{ route('home.page') }}">{{ __('header.home') }}</a></li>
@@ -47,7 +48,7 @@
       </div>
     </div>
 
-    <div class="container mt-4 text-center copyright">
+    <div class="text-center  copyright">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ $setting->site_name }}</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
 
